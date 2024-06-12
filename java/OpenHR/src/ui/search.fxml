@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ControlleurRecherche">
+   <children>
+      <AnchorPane fx:id="formulaiireAnchor" prefHeight="320.0" prefWidth="873.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="buttonRecherche" layoutX="691.0" layoutY="265.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="115.0" style="-fx-background-color: #0582CA;" text="Rechercher" textFill="WHITE" />
+            <Text layoutX="14.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recherche :" wrappingWidth="151.26000213623047">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <TextField fx:id="textFieldNIE" layoutX="184.0" layoutY="19.0" prefHeight="26.0" prefWidth="44.0" promptText="NIE" style="-fx-background-color: #D9D9D9;" />
+            <TextField fx:id="textFieldNIEs" layoutX="244.0" layoutY="19.0" prefHeight="26.0" prefWidth="44.0" promptText="NIEs" style="-fx-background-color: #D9D9D9;" />
+            <TextField fx:id="textFieldNom" layoutX="309.0" layoutY="19.0" prefHeight="26.0" prefWidth="173.0" promptText="Nom" style="-fx-background-color: #D9D9D9;" />
+            <TextField fx:id="textFieldPrenom" layoutX="503.0" layoutY="19.0" prefHeight="26.0" prefWidth="173.0" promptText="Prénom" style="-fx-background-color: #D9D9D9;" />
+            <ComboBox fx:id="comboBoxSexe" layoutX="696.0" layoutY="19.0" prefHeight="26.0" prefWidth="106.0" promptText="Genre" style="-fx-background-color: #D9D9D9;" />
+            <TextField fx:id="textFieldPoste" layoutX="15.0" layoutY="73.0" prefHeight="26.0" prefWidth="359.0" promptText="Poste" style="-fx-background-color: #D9D9D9;" />
+            <TextField fx:id="textfieldDepartement" layoutX="393.0" layoutY="73.0" prefHeight="26.0" prefWidth="173.0" promptText="Département" style="-fx-background-color: #D9D9D9;" />
+            <ComboBox fx:id="comboBoxTypeContrat" layoutX="582.0" layoutY="73.0" prefHeight="26.0" prefWidth="219.0" promptText="Type de contrat" style="-fx-background-color: #D9D9D9;" />
+            <DatePicker fx:id="datePickerDebutContrat" layoutX="14.0" layoutY="123.0" prefHeight="26.0" prefWidth="200.0" promptText="Début contrat" style="-fx-background-color: #D9D9D9;" />
+            <DatePicker fx:id="datePickerFinContrat" layoutX="228.0" layoutY="123.0" prefHeight="26.0" prefWidth="200.0" promptText="Début contrat" style="-fx-background-color: #D9D9D9;" />
+            <TextField fx:id="textFieldTaux" layoutX="446.0" layoutY="123.0" prefHeight="26.0" prefWidth="106.0" promptText="Taux" style="-fx-background-color: #D9D9D9;" />
+            <TextField fx:id="textFieldSup" layoutX="571.0" layoutY="123.0" prefHeight="26.0" prefWidth="106.0" promptText="Sup" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerHPJ" layoutX="695.0" layoutY="123.0" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #D9D9D9;" />
+            <Text layoutX="22.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heures d'absences" textAlignment="RIGHT" wrappingWidth="173.0" />
+            <Text layoutX="22.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jours de congés vacances" textAlignment="RIGHT" wrappingWidth="173.0" />
+            <Text layoutX="22.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jours de congés maladie" textAlignment="RIGHT" wrappingWidth="173.0" />
+            <TextField fx:id="textFieldFormations" layoutX="15.0" layoutY="270.0" prefHeight="26.0" prefWidth="318.0" promptText="Formations" style="-fx-background-color: #D9D9D9;" />
+            <TextField fx:id="textFieldCertifications" layoutX="353.0" layoutY="270.0" prefHeight="26.0" prefWidth="318.0" promptText="Certifications" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerHA1" layoutX="203.0" layoutY="166.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerHA11" layoutX="703.0" layoutY="166.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerHA2" layoutX="253.0" layoutY="166.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerHA3" layoutX="303.0" layoutY="166.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerHA4" layoutX="353.0" layoutY="166.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerHA5" layoutX="403.0" layoutY="166.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerHA6" layoutX="453.0" layoutY="166.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerHA12" layoutX="753.0" layoutY="166.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerHA7" layoutX="503.0" layoutY="166.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerHA8" layoutX="553.0" layoutY="166.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerHA9" layoutX="603.0" layoutY="166.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerHA10" layoutX="653.0" layoutY="166.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCV1" layoutX="203.0" layoutY="199.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCV11" layoutX="703.0" layoutY="199.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCV2" layoutX="253.0" layoutY="199.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCV3" layoutX="303.0" layoutY="199.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCV4" layoutX="353.0" layoutY="199.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCV5" layoutX="403.0" layoutY="199.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCV6" layoutX="453.0" layoutY="199.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCV12" layoutX="753.0" layoutY="199.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCV7" layoutX="503.0" layoutY="199.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCV8" layoutX="553.0" layoutY="199.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCV9" layoutX="603.0" layoutY="199.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCV10" layoutX="653.0" layoutY="199.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCM1" layoutX="203.0" layoutY="232.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCM11" layoutX="703.0" layoutY="232.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCM2" layoutX="253.0" layoutY="232.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCM3" layoutX="303.0" layoutY="232.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCM4" layoutX="353.0" layoutY="232.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCM5" layoutX="403.0" layoutY="232.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCM6" layoutX="453.0" layoutY="232.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCM12" layoutX="753.0" layoutY="232.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCM7" layoutX="503.0" layoutY="232.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCM8" layoutX="553.0" layoutY="232.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCM9" layoutX="603.0" layoutY="232.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+            <Spinner fx:id="spinnerCM10" layoutX="653.0" layoutY="232.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #D9D9D9;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="resultatsAnchor" layoutY="323.0" prefHeight="247.0" prefWidth="820.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="320.0">
+         <children>
+            <TreeTableView fx:id="tableResultats" prefHeight="250.0" prefWidth="820.0" style="-fx-background-color: #D9D9D9;">
+              <columns>
+                  <TreeTableColumn fx:id="columnNIE" prefWidth="46.0" text="NIE" />
+                <TreeTableColumn fx:id="columnNom" prefWidth="115.0" text="Nom" />
+                <TreeTableColumn fx:id="columnPrenom" prefWidth="115.0" text="Prenom" />
+                  <TreeTableColumn fx:id="columnGenre" prefWidth="70.0" text="Genre" />
+                  <TreeTableColumn fx:id="columnNumero" prefWidth="130.0" text="Numéro" />
+                  <TreeTableColumn fx:id="columnMail" prefWidth="150.0" text="Mail" />
+                  <TreeTableColumn fx:id="columnPoste" prefWidth="193.0" text="Poste" />
+              </columns>
+            </TreeTableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
